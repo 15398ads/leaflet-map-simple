@@ -28,8 +28,8 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [51.03842914014868, 4.101726476714462], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-    scrollWheelZoom: false
+    zoom: 18,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: true
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
@@ -44,6 +44,10 @@
   L.marker([51.03842914014868, 4.101726476714462]).addTo(map) // EDIT marker coordinates
   .bindPopup("Home"); // EDIT pop-up text message
 
+   /* Display a point marker with pop-up text */
+  L.marker([50.85181481487199, 4.402883286148941]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Work"); // EDIT pop-up text message
+    
   </script>
 </body>
 </html>
